@@ -1,6 +1,7 @@
 import scala.io.Source
 
-class FileReader(val filename: String) {
+case class FileReader(filename: String) {
+  
   def readInput(): String = {
     val fileSource = Source.fromFile(s"inputs/$filename")
     try fileSource.mkString finally fileSource.close()

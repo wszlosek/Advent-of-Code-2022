@@ -1,9 +1,11 @@
 import scala.collection.mutable.ListBuffer
 
 object Day01 {
+
   def main(args: Array[String]): Unit = {
     val file = FileReader("day01-input.txt")
     val fileContent = file.fileContent()
+
     println(s"1: ${part1(fileContent)}; 2: ${part2(fileContent)}")
   }
 

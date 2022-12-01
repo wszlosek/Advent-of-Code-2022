@@ -1,6 +1,7 @@
 import scala.collection.mutable.ListBuffer
 
 object ListOperations {
+  
   def splitAt(listToSplit: List[String], element: String): List[List[String]] = {
     val result = ListBuffer[List[String]]()
     val elementIndexes = indexesOfElement(listToSplit, element)
