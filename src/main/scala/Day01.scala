@@ -1,3 +1,6 @@
+import utils.FileReader
+import utils.ListOperations.splitAt
+
 import scala.collection.mutable.ListBuffer
 
 object Day01 {
@@ -21,7 +24,6 @@ object Day01 {
   }
 
   def partialSums(fileContent: List[String]): List[Int] = {
-    import ListOperations._
     splitAt(fileContent,"")
       .map(_.map(_.toInt).sum)
   }

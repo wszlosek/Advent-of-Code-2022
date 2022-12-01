@@ -1,3 +1,5 @@
+package utils
+
 import scala.io.Source
 
 case class FileReader(filename: String) {
